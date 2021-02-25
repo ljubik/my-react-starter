@@ -6,7 +6,7 @@ const Header = function () {
   return (
     <header className={style.header}>
       <nav>
-        <a href="#">Header</a>
+        <a href="cil.org.ua">Header</a>
       </nav>
     </header>
   );
