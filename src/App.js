@@ -39,16 +39,21 @@ class App extends Component {
     const { addContact, getValue } = this;
     return (
       <>
-      <Header />
-      <Main db={db} addContact={addContact} getValue={getValue}/>
-      <Suspense>
+
+      
+      <Suspense fallback={"Waiting..."}>
           <Route exact path="/" render={props => 
             <HomePage 
               {...props} 
               onChangePath={this.onChangePath}
             />}
           />
-      <Footer />
+          <Route exact path="/about" render={props => 
+            <About 
+              {...props} 
+              onChangePath={this.onChangePath}
+            />}
+          />
       </Suspense>
     </>
     );

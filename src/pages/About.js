@@ -1,11 +1,16 @@
-import React from "react";
+import React from 'react';
+import Header from '../components/Header/Header';
+import Main from "../components/Main/Main";
+import Footer from "../components/Footer/Footer";
 
 
 function About () {
 
   return (
     <> 
-        <div> The second page</div>
+    <Header />
+    <div> The second page</div>
+    <Footer />
     </>
   );
 }
